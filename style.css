@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+header, nav, section, main {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #007b5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+nav button {
+  background-color: #444;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}

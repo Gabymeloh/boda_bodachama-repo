@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boda Boda Chama App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Good morning, John! Ready to save today?</h1>
+    <button id="saveBtn">💰 Save KSh 5 Today</button>
+  </header>
+
+  <section id="summary">
+    <h2>Savings Summary</h2>
+    <p>Total Saved: <span id="totalSaved">KSh 2450</span></p>
+    <p>This Month: <span id="monthlySaved">KSh 150</span></p>
+    <p>Last Payment: <span id="lastPayment">27 Sep 2025</span></p>
+  </section>
+
+  <nav>
+    <button onclick="showScreen('home')">🏠 Home</button>
+    <button onclick="showScreen('records')">📊 Records</button>
+    <button onclick="showScreen('loans')">💸 Loans</button>
+    <button onclick="showScreen('alerts')">🔔 Alerts</button>
+    <button onclick="showScreen('profile')">👤 Profile</button>
+  </nav>
+
+  <main>
+    <div id="homeScreen" class="screen active"></div>
+
+    <div id="recordsScreen" class="screen">
+      <h2>Payment Records</h2>
+      <table>
+        <tr><th>Date</th><th>Amount</th><th>Status</th></tr>
+        <tr><td>27 Sep</td><td>KSh 5</td><td>✅ Paid</td></tr>
+        <tr><td>26 Sep</td><td>KSh 5</td><td>✅ Paid</td></tr>
+        <tr><td>25 Sep</td><td>KSh 0</td><td>❌ Missed</td></tr>
+      </table>
+      <button>Download Monthly Report</button>
+    </div>
+
+    <div id="loansScreen" class="screen">
+      <h2>Loan Center</h2>
+      <p>Active Loan: KSh 3000</p>
+      <p>Remaining Balance: KSh 1200</p>
+      <p>Next Due Date: 30 Sep 2025</p>
+      <button>Apply for Loan</button>
+      <h3>Repayment History</h3>
+      <ul>
+        <li>15 Sep – KSh 500 – ✅ Paid</li>
+        <li>01 Sep – KSh 500 – ✅ Paid</li>
+      </ul>
+    </div>
+
+    <div id="alertsScreen" class="screen">
+      <h2>Notifications</h2>
+      <ul>
+        <li>⏰ Your next loan payment is due in 2 days</li>
+        <li>✅ You’ve saved KSh 5 today. Keep it up!</li>
+        <li>📢 Meeting on Sunday at 4 PM at the stage</li>
+      </ul>
+    </div>
+
+    <div id="profileScreen" class="screen">
+      <h2>Member Profile</h2>
+      <p>Name: John Mwangi</p>
+      <p>Phone: 07XX XXX XXX</p>
+      <p>Total Savings: KSh 4500</p>
+      <p>Loan History: 2 loans repaid</p>
+      <button>Edit Profile</button>
+      <button>Change PIN</button>
+      <button>Logout</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
